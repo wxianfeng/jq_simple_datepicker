@@ -87,7 +87,7 @@
 			
 				// month select field
 				var monthselect = '<select name="month">';
-				for (var i in months) monthselect += '<option value="'+i+'">'+months[i]+'</option>';
+				for (var i=0 ; i < months.length ; ++i ) monthselect += '<option value="'+i+'">'+months[i]+'</option>';
 				monthselect += '</select>';
 			
 				// year select field
