@@ -269,6 +269,10 @@
 						jQuery("span.nextMonth", datepicker).click(function (e) { loadMonth (e, $this, datepicker, chosendate); });
 						jQuery("span.today", datepicker).click(function () { closeIt($this, datepicker, new Date()); });
 						jQuery("span.close", datepicker).click(function () { closeIt($this, datepicker); });
+					  jQuery(document).keydown(function(e){
+                if (e.keyCode == 27) closeIt($this, datepicker); // ESC close datepicker
+						});
+
 						
 						// set the initial values for the month and year select fields
 						// and load the first month
